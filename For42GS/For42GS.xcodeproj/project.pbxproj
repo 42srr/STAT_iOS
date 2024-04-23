@@ -15,6 +15,7 @@
 		F6C4F8B12B9AF956007A8D29 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C4F8B02B9AF956007A8D29 /* Service.swift */; };
 		F6C4F8B32B9AFD10007A8D29 /* UIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C4F8B22B9AFD10007A8D29 /* UIScreen.swift */; };
 		F6C4F8C02B9B1042007A8D29 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F6C4F8BF2B9B1042007A8D29 /* Alamofire */; };
+		F6FA7F952BD6305F00738F65 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FA7F942BD6305F00738F65 /* Info.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		F6C4F8AE2B9AEDAD007A8D29 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 		F6C4F8B02B9AF956007A8D29 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		F6C4F8B22B9AFD10007A8D29 /* UIScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScreen.swift; sourceTree = "<group>"; };
+		F6FA7F942BD6305F00738F65 /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				F6C4F8A22B9AEC40007A8D29 /* ContentView.swift */,
+				F6FA7F942BD6305F00738F65 /* Info.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 				F6C4F8AF2B9AEDAD007A8D29 /* Auth.swift in Sources */,
 				F6C4F8B12B9AF956007A8D29 /* Service.swift in Sources */,
 				F6C4F8A32B9AEC40007A8D29 /* ContentView.swift in Sources */,
+				F6FA7F952BD6305F00738F65 /* Info.swift in Sources */,
 				F6C4F8A12B9AEC40007A8D29 /* For42GSApp.swift in Sources */,
 				F6C4F8B32B9AFD10007A8D29 /* UIScreen.swift in Sources */,
 			);

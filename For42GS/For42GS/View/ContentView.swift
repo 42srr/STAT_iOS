@@ -12,18 +12,21 @@ struct ContentView: View {
     @EnvironmentObject var service : Service
     
     var body: some View {
-        VStack {
-            Spacer()
-            logo
-            idfield
-            passField
-            loginButton
-            Spacer()
-            Spacer()
-        }
-        .background(Color.white)
-        .onTapGesture {
-            UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+        
+        NavigationView {
+            VStack {
+                Spacer()
+                logo
+                idfield
+                passField
+                loginButton
+                Spacer()
+                Spacer()
+            }
+            .background(Color.white)
+            .onTapGesture {
+                UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+            }
         }
     }
 }
@@ -61,17 +64,17 @@ extension ContentView {
     }
     
     var loginButton: some View {
-        VStack(spacing: UIScreen.getWidth(5)) {
-            HStack(spacing: UIScreen.getWidth(8)) {
-                Button {
-                    
-                } label: {
-                    Text("Login")
-                        .frame(width: UIScreen.getWidth(370), height: UIScreen.getHeight(52))
-                        .background(Color.black)
-                        .foregroundColor(.white)
-                        .cornerRadius(8)
-                        .shadow(color: .black.opacity(0.4), radius: UIScreen.getHeight(5))
+        NavigationLink(destination: Info()) {
+            VStack(spacing: UIScreen.getWidth(5)) {
+                HStack(spacing: UIScreen.getWidth(8)) {
+                    Button {} label: {
+                        Text("Login")
+                            .frame(width: UIScreen.getWidth(370), height: UIScreen.getHeight(52))
+                            .background(Color.black)
+                            .foregroundColor(.white)
+                            .cornerRadius(8)
+                            .shadow(color: .black.opacity(0.4), radius: UIScreen.getHeight(5))
+                    }
                 }
             }
         }
