@@ -10,11 +10,19 @@ import SwiftUI
 @main
 struct For42GSApp: App {
     
+    //MARK: - 1. PROPERTY
+    
     @StateObject var service = Service()
+    
+    //MARK: -2. BODY
     
     var body: some Scene {
         WindowGroup {
-            ContentView().environmentObject(service)
+            if service.isLogin {
+                ContentView().environmentObject(service)
+            } else {
+                LoginPageView().environmentObject(service)
+            }
         }
     }
 }

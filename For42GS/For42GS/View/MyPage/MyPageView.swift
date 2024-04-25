@@ -8,11 +8,18 @@
 import SwiftUI
 
 struct MyPageView: View {
+//MARK: - 1. PROPERTY
+    
+    @EnvironmentObject var service : Service
+
+//MARK: - 2. BODY
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text(service.quotes.name)
     }
 }
 
+//MARK: - 3. PREVIEW
 #Preview {
-    MyPageView()
+    MyPageView().environmentObject(Service())
 }

@@ -15,7 +15,11 @@
 		F6C4F8B12B9AF956007A8D29 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C4F8B02B9AF956007A8D29 /* Service.swift */; };
 		F6C4F8B32B9AFD10007A8D29 /* UIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C4F8B22B9AFD10007A8D29 /* UIScreen.swift */; };
 		F6C4F8C02B9B1042007A8D29 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F6C4F8BF2B9B1042007A8D29 /* Alamofire */; };
-		F6FA7F952BD6305F00738F65 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FA7F942BD6305F00738F65 /* Info.swift */; };
+		F6FA7FA62BD9A13F00738F65 /* LoginPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FA7FA52BD9A13F00738F65 /* LoginPageView.swift */; };
+		F6FA7FA82BD9A26700738F65 /* Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FA7FA72BD9A26700738F65 /* Quotes.swift */; };
+		F6FA7FAB2BD9A35E00738F65 /* InfoPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FA7FAA2BD9A35E00738F65 /* InfoPageView.swift */; };
+		F6FA7FAE2BD9A46F00738F65 /* RankPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FA7FAD2BD9A46F00738F65 /* RankPageView.swift */; };
+		F6FA7FB12BD9A49D00738F65 /* MyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FA7FB02BD9A49D00738F65 /* MyPageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +31,11 @@
 		F6C4F8AE2B9AEDAD007A8D29 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 		F6C4F8B02B9AF956007A8D29 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		F6C4F8B22B9AFD10007A8D29 /* UIScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScreen.swift; sourceTree = "<group>"; };
-		F6FA7F942BD6305F00738F65 /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
+		F6FA7FA52BD9A13F00738F65 /* LoginPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageView.swift; sourceTree = "<group>"; };
+		F6FA7FA72BD9A26700738F65 /* Quotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quotes.swift; sourceTree = "<group>"; };
+		F6FA7FAA2BD9A35E00738F65 /* InfoPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPageView.swift; sourceTree = "<group>"; };
+		F6FA7FAD2BD9A46F00738F65 /* RankPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankPageView.swift; sourceTree = "<group>"; };
+		F6FA7FB02BD9A49D00738F65 /* MyPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				F6C4F8AE2B9AEDAD007A8D29 /* Auth.swift */,
+				F6FA7FA72BD9A26700738F65 /* Quotes.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -100,7 +109,10 @@
 			isa = PBXGroup;
 			children = (
 				F6C4F8A22B9AEC40007A8D29 /* ContentView.swift */,
-				F6FA7F942BD6305F00738F65 /* Info.swift */,
+				F6FA7FA42BD9A12600738F65 /* Login */,
+				F6FA7FAF2BD9A48100738F65 /* MyPage */,
+				F6FA7FA92BD9A34500738F65 /* Info */,
+				F6FA7FAC2BD9A46200738F65 /* Rank */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -111,6 +123,38 @@
 				F6C4F8B02B9AF956007A8D29 /* Service.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		F6FA7FA42BD9A12600738F65 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F6FA7FA52BD9A13F00738F65 /* LoginPageView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		F6FA7FA92BD9A34500738F65 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				F6FA7FAA2BD9A35E00738F65 /* InfoPageView.swift */,
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
+		F6FA7FAC2BD9A46200738F65 /* Rank */ = {
+			isa = PBXGroup;
+			children = (
+				F6FA7FAD2BD9A46F00738F65 /* RankPageView.swift */,
+			);
+			path = Rank;
+			sourceTree = "<group>";
+		};
+		F6FA7FAF2BD9A48100738F65 /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				F6FA7FB02BD9A49D00738F65 /* MyPageView.swift */,
+			);
+			path = MyPage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,10 +234,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6FA7FA82BD9A26700738F65 /* Quotes.swift in Sources */,
+				F6FA7FAE2BD9A46F00738F65 /* RankPageView.swift in Sources */,
 				F6C4F8AF2B9AEDAD007A8D29 /* Auth.swift in Sources */,
+				F6FA7FA62BD9A13F00738F65 /* LoginPageView.swift in Sources */,
 				F6C4F8B12B9AF956007A8D29 /* Service.swift in Sources */,
 				F6C4F8A32B9AEC40007A8D29 /* ContentView.swift in Sources */,
-				F6FA7F952BD6305F00738F65 /* Info.swift in Sources */,
+				F6FA7FB12BD9A49D00738F65 /* MyPageView.swift in Sources */,
+				F6FA7FAB2BD9A35E00738F65 /* InfoPageView.swift in Sources */,
 				F6C4F8A12B9AEC40007A8D29 /* For42GSApp.swift in Sources */,
 				F6C4F8B32B9AFD10007A8D29 /* UIScreen.swift in Sources */,
 			);
