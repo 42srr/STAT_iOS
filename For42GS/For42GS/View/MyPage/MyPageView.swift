@@ -15,7 +15,10 @@ struct MyPageView: View {
 //MARK: - 2. BODY
     
     var body: some View {
-        Text(service.quotes.name)
+        VStack{
+            Text(service.quotes.content)
+            Text(service.quotes.name)
+        }
     }
 }
 
