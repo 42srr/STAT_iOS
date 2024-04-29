@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct Auth {
+struct Auth : Codable {
+    
     var intraId : String
     var intraPass : String
     
