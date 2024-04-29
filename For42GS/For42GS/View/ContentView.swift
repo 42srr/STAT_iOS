@@ -2,13 +2,12 @@
 //  ContentView.swift
 //  For42GS
 //
-//  Created by Kimdohyun on 3/8/24.
+//  Created by devoogie on 4/25/24.
 //
 
 import SwiftUI
 
 struct ContentView: View {
-
 //MARK: - 1. PROPERTY
     
     @EnvironmentObject var service : Service
@@ -46,8 +45,6 @@ struct ContentView: View {
     }
 }
 
-//MARK: - 3. PREVIEW
-
 #Preview {
-    ContentView().environmentObject(Service())
+    ContentView()
 }
