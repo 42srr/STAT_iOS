@@ -15,6 +15,8 @@
 		1E1AD50A2BDF5DE400D90588 /* RankingUserConponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1AD4FF2BDF5DE400D90588 /* RankingUserConponentView.swift */; };
 		1E1AD50B2BDF5DE400D90588 /* TopToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1AD5002BDF5DE400D90588 /* TopToolbarView.swift */; };
 		1E1AD50C2BDF5DE400D90588 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1AD5012BDF5DE400D90588 /* UserView.swift */; };
+		1E89CABA2C16ABBD00CE4482 /* SubjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E89CAB92C16ABBD00CE4482 /* SubjectView.swift */; };
+		1ECBA3842C16B11300883803 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECBA3832C16B11300883803 /* PieChartView.swift */; };
 		1EF6E42B2BE32AD300FCBD12 /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF6E42A2BE32AD300FCBD12 /* QuoteView.swift */; };
 		F6C4F8A12B9AEC40007A8D29 /* For42GSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C4F8A02B9AEC40007A8D29 /* For42GSApp.swift */; };
 		F6C4F8A32B9AEC40007A8D29 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C4F8A22B9AEC40007A8D29 /* ContentView.swift */; };
@@ -40,6 +42,8 @@
 		1E1AD4FF2BDF5DE400D90588 /* RankingUserConponentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankingUserConponentView.swift; sourceTree = "<group>"; };
 		1E1AD5002BDF5DE400D90588 /* TopToolbarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopToolbarView.swift; sourceTree = "<group>"; };
 		1E1AD5012BDF5DE400D90588 /* UserView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		1E89CAB92C16ABBD00CE4482 /* SubjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectView.swift; sourceTree = "<group>"; };
+		1ECBA3832C16B11300883803 /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
 		1EF6E42A2BE32AD300FCBD12 /* QuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteView.swift; sourceTree = "<group>"; };
 		F6C4F89D2B9AEC40007A8D29 /* For42GS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = For42GS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6C4F8A02B9AEC40007A8D29 /* For42GSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = For42GSApp.swift; sourceTree = "<group>"; };
@@ -80,6 +84,7 @@
 		1E1AD5022BDF5DE400D90588 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				1E89CAB92C16ABBD00CE4482 /* SubjectView.swift */,
 				1E1AD4FC2BDF5DE400D90588 /* Progress */,
 				1E1AD4FD2BDF5DE400D90588 /* ProgressInfoView.swift */,
 				1E1AD4FE2BDF5DE400D90588 /* RankingListView.swift */,
@@ -87,6 +92,7 @@
 				1E1AD5002BDF5DE400D90588 /* TopToolbarView.swift */,
 				1E1AD5012BDF5DE400D90588 /* UserView.swift */,
 				1EF6E42A2BE32AD300FCBD12 /* QuoteView.swift */,
+				1ECBA3832C16B11300883803 /* PieChartView.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -277,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ECBA3842C16B11300883803 /* PieChartView.swift in Sources */,
 				1E1AD5062BDF5DE400D90588 /* ProgressModel.swift in Sources */,
 				1E1AD50A2BDF5DE400D90588 /* RankingUserConponentView.swift in Sources */,
 				1E1AD5092BDF5DE400D90588 /* RankingListView.swift in Sources */,
@@ -284,6 +291,7 @@
 				F6FA7FA82BD9A26700738F65 /* Quotes.swift in Sources */,
 				F6FA7FAE2BD9A46F00738F65 /* RankPageView.swift in Sources */,
 				F6C4F8AF2B9AEDAD007A8D29 /* Auth.swift in Sources */,
+				1E89CABA2C16ABBD00CE4482 /* SubjectView.swift in Sources */,
 				1E1AD50B2BDF5DE400D90588 /* TopToolbarView.swift in Sources */,
 				F6FA7FA62BD9A13F00738F65 /* LoginPageView.swift in Sources */,
 				1EF6E42B2BE32AD300FCBD12 /* QuoteView.swift in Sources */,
