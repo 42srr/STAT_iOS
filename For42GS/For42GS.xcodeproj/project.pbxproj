@@ -16,6 +16,7 @@
 		1E1AD50B2BDF5DE400D90588 /* TopToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1AD5002BDF5DE400D90588 /* TopToolbarView.swift */; };
 		1E1AD50C2BDF5DE400D90588 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1AD5012BDF5DE400D90588 /* UserView.swift */; };
 		1EF6E42B2BE32AD300FCBD12 /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF6E42A2BE32AD300FCBD12 /* QuoteView.swift */; };
+		F684BA542C40C4CB00978836 /* LoginModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F684BA532C40C4CB00978836 /* LoginModalView.swift */; };
 		F6C4F8A12B9AEC40007A8D29 /* For42GSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C4F8A02B9AEC40007A8D29 /* For42GSApp.swift */; };
 		F6C4F8A32B9AEC40007A8D29 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C4F8A22B9AEC40007A8D29 /* ContentView.swift */; };
 		F6C4F8A52B9AEC41007A8D29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6C4F8A42B9AEC41007A8D29 /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 		1E1AD5002BDF5DE400D90588 /* TopToolbarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopToolbarView.swift; sourceTree = "<group>"; };
 		1E1AD5012BDF5DE400D90588 /* UserView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 		1EF6E42A2BE32AD300FCBD12 /* QuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteView.swift; sourceTree = "<group>"; };
+		F684BA532C40C4CB00978836 /* LoginModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModalView.swift; sourceTree = "<group>"; };
 		F6C4F89D2B9AEC40007A8D29 /* For42GS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = For42GS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6C4F8A02B9AEC40007A8D29 /* For42GSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = For42GSApp.swift; sourceTree = "<group>"; };
 		F6C4F8A22B9AEC40007A8D29 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				F6FA7FA52BD9A13F00738F65 /* LoginPageView.swift */,
+				F684BA532C40C4CB00978836 /* LoginModalView.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				F6C4F8A32B9AEC40007A8D29 /* ContentView.swift in Sources */,
 				F6FA7FB12BD9A49D00738F65 /* MyPageView.swift in Sources */,
 				F6FA7FAB2BD9A35E00738F65 /* InfoPageView.swift in Sources */,
+				F684BA542C40C4CB00978836 /* LoginModalView.swift in Sources */,
 				F6C4F8A12B9AEC40007A8D29 /* For42GSApp.swift in Sources */,
 				1E1AD5072BDF5DE400D90588 /* ProgressView.swift in Sources */,
 				F6C4F8B32B9AFD10007A8D29 /* UIScreen.swift in Sources */,

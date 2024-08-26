@@ -11,12 +11,14 @@ import Alamofire
 
 class Service : ObservableObject {
     
+    let appServer : String = "https://9jwkpwdev2.apigw.ntruss.com/api/dev"
+    @Published var callBackUrl : URL = URL(string: "https://example.com")!
     @Published var isLogin : Bool = false
     @Published var auth : Auth = Auth()
     @Published var quotes : Quotes = Quotes()
     
     func getQuotes() {
-        AF.request("https://c052-118-67-134-143.ngrok-free.app/quotes", method: .get)
+        AF.request("\(appServer)/quotes", method: .get)
             .responseDecodable(of: Quotes.self) { response in
                 switch response.result {
                 case .success(let data):
@@ -27,6 +29,4 @@ class Service : ObservableObject {
                 }
             }
     }
-    
-    
 }

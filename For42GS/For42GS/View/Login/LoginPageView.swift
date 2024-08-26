@@ -20,8 +20,7 @@ struct LoginPageView: View {
             VStack {
                 Spacer()
                 logo
-                idfield
-                passField
+                Spacer()
                 loginButton
                 Spacer()
                 Spacer()
