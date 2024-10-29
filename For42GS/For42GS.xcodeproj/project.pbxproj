@@ -7,15 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1E1AD5052BDF5DE400D90588 /* MyInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1AD4F92BDF5DE400D90588 /* MyInfoView.swift */; };
-		1E1AD5062BDF5DE400D90588 /* ProgressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1AD4FA2BDF5DE400D90588 /* ProgressModel.swift */; };
-		1E1AD5072BDF5DE400D90588 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1AD4FB2BDF5DE400D90588 /* ProgressView.swift */; };
-		1E1AD5082BDF5DE400D90588 /* ProgressInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1AD4FD2BDF5DE400D90588 /* ProgressInfoView.swift */; };
-		1E1AD5092BDF5DE400D90588 /* RankingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1AD4FE2BDF5DE400D90588 /* RankingListView.swift */; };
-		1E1AD50A2BDF5DE400D90588 /* RankingUserConponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1AD4FF2BDF5DE400D90588 /* RankingUserConponentView.swift */; };
-		1E1AD50B2BDF5DE400D90588 /* TopToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1AD5002BDF5DE400D90588 /* TopToolbarView.swift */; };
-		1E1AD50C2BDF5DE400D90588 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1AD5012BDF5DE400D90588 /* UserView.swift */; };
-		1EF6E42B2BE32AD300FCBD12 /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF6E42A2BE32AD300FCBD12 /* QuoteView.swift */; };
+		F6045F602CB5F98300083326 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6045F5F2CB5F96B00083326 /* Level.swift */; };
+		F6045F622CBCCFD200083326 /* Projects.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6045F612CBCCFD200083326 /* Projects.swift */; };
+		F6045F642CBD24C200083326 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6045F632CBD24C200083326 /* Keychain.swift */; };
+		F6045F662CBE7A1100083326 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6045F652CBE7A1100083326 /* ChartView.swift */; };
+		F6045F682CBF488400083326 /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6045F672CBF488400083326 /* Wallet.swift */; };
+		F6045F6A2CBF504A00083326 /* FtUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6045F692CBF504A00083326 /* FtUser.swift */; };
+		F6045F6D2CBF87AE00083326 /* Evalpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6045F6C2CBF87AE00083326 /* Evalpoint.swift */; };
 		F684BA542C40C4CB00978836 /* LoginModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F684BA532C40C4CB00978836 /* LoginModalView.swift */; };
 		F6A7EFFB2C7C3AE600BF1A7B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F6A7EFFA2C7C3AE600BF1A7B /* Alamofire */; };
 		F6C4F8A12B9AEC40007A8D29 /* For42GSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C4F8A02B9AEC40007A8D29 /* For42GSApp.swift */; };
@@ -26,7 +24,6 @@
 		F6C4F8B12B9AF956007A8D29 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C4F8B02B9AF956007A8D29 /* Service.swift */; };
 		F6C4F8B32B9AFD10007A8D29 /* UIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C4F8B22B9AFD10007A8D29 /* UIScreen.swift */; };
 		F6FA7FA62BD9A13F00738F65 /* LoginPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FA7FA52BD9A13F00738F65 /* LoginPageView.swift */; };
-		F6FA7FA82BD9A26700738F65 /* Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FA7FA72BD9A26700738F65 /* Quotes.swift */; };
 		F6FA7FAB2BD9A35E00738F65 /* InfoPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FA7FAA2BD9A35E00738F65 /* InfoPageView.swift */; };
 		F6FA7FAE2BD9A46F00738F65 /* RankPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FA7FAD2BD9A46F00738F65 /* RankPageView.swift */; };
 		F6FA7FB12BD9A49D00738F65 /* MyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FA7FB02BD9A49D00738F65 /* MyPageView.swift */; };
@@ -46,15 +43,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1E1AD4F92BDF5DE400D90588 /* MyInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyInfoView.swift; sourceTree = "<group>"; };
-		1E1AD4FA2BDF5DE400D90588 /* ProgressModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressModel.swift; sourceTree = "<group>"; };
-		1E1AD4FB2BDF5DE400D90588 /* ProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
-		1E1AD4FD2BDF5DE400D90588 /* ProgressInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressInfoView.swift; sourceTree = "<group>"; };
-		1E1AD4FE2BDF5DE400D90588 /* RankingListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankingListView.swift; sourceTree = "<group>"; };
-		1E1AD4FF2BDF5DE400D90588 /* RankingUserConponentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankingUserConponentView.swift; sourceTree = "<group>"; };
-		1E1AD5002BDF5DE400D90588 /* TopToolbarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopToolbarView.swift; sourceTree = "<group>"; };
-		1E1AD5012BDF5DE400D90588 /* UserView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
-		1EF6E42A2BE32AD300FCBD12 /* QuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteView.swift; sourceTree = "<group>"; };
+		F6045F5F2CB5F96B00083326 /* Level.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
+		F6045F612CBCCFD200083326 /* Projects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Projects.swift; sourceTree = "<group>"; };
+		F6045F632CBD24C200083326 /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+		F6045F652CBE7A1100083326 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		F6045F672CBF488400083326 /* Wallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
+		F6045F692CBF504A00083326 /* FtUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FtUser.swift; sourceTree = "<group>"; };
+		F6045F6C2CBF87AE00083326 /* Evalpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Evalpoint.swift; sourceTree = "<group>"; };
 		F684BA532C40C4CB00978836 /* LoginModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModalView.swift; sourceTree = "<group>"; };
 		F6C4F89D2B9AEC40007A8D29 /* For42GS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = For42GS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6C4F8A02B9AEC40007A8D29 /* For42GSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = For42GSApp.swift; sourceTree = "<group>"; };
@@ -65,7 +60,6 @@
 		F6C4F8B02B9AF956007A8D29 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		F6C4F8B22B9AFD10007A8D29 /* UIScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScreen.swift; sourceTree = "<group>"; };
 		F6FA7FA52BD9A13F00738F65 /* LoginPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageView.swift; sourceTree = "<group>"; };
-		F6FA7FA72BD9A26700738F65 /* Quotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quotes.swift; sourceTree = "<group>"; };
 		F6FA7FAA2BD9A35E00738F65 /* InfoPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPageView.swift; sourceTree = "<group>"; };
 		F6FA7FAD2BD9A46F00738F65 /* RankPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankPageView.swift; sourceTree = "<group>"; };
 		F6FA7FB02BD9A49D00738F65 /* MyPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageView.swift; sourceTree = "<group>"; };
@@ -83,27 +77,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1E1AD4FC2BDF5DE400D90588 /* Progress */ = {
+		F6045F6B2CBF879200083326 /* Rank */ = {
 			isa = PBXGroup;
 			children = (
-				1E1AD4FA2BDF5DE400D90588 /* ProgressModel.swift */,
-				1E1AD4FB2BDF5DE400D90588 /* ProgressView.swift */,
+				F6045F672CBF488400083326 /* Wallet.swift */,
+				F6045F6C2CBF87AE00083326 /* Evalpoint.swift */,
 			);
-			path = Progress;
-			sourceTree = "<group>";
-		};
-		1E1AD5022BDF5DE400D90588 /* Component */ = {
-			isa = PBXGroup;
-			children = (
-				1E1AD4FC2BDF5DE400D90588 /* Progress */,
-				1E1AD4FD2BDF5DE400D90588 /* ProgressInfoView.swift */,
-				1E1AD4FE2BDF5DE400D90588 /* RankingListView.swift */,
-				1E1AD4FF2BDF5DE400D90588 /* RankingUserConponentView.swift */,
-				1E1AD5002BDF5DE400D90588 /* TopToolbarView.swift */,
-				1E1AD5012BDF5DE400D90588 /* UserView.swift */,
-				1EF6E42A2BE32AD300FCBD12 /* QuoteView.swift */,
-			);
-			path = Component;
+			path = Rank;
 			sourceTree = "<group>";
 		};
 		F6C4F8942B9AEC40007A8D29 = {
@@ -148,6 +128,8 @@
 			isa = PBXGroup;
 			children = (
 				F6C4F8B22B9AFD10007A8D29 /* UIScreen.swift */,
+				F6045F632CBD24C200083326 /* Keychain.swift */,
+				F6045F652CBE7A1100083326 /* ChartView.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -155,8 +137,11 @@
 		F6C4F8B62B9B05A1007A8D29 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F6045F6B2CBF879200083326 /* Rank */,
+				F6045F5F2CB5F96B00083326 /* Level.swift */,
 				F6C4F8AE2B9AEDAD007A8D29 /* Auth.swift */,
-				F6FA7FA72BD9A26700738F65 /* Quotes.swift */,
+				F6045F612CBCCFD200083326 /* Projects.swift */,
+				F6045F692CBF504A00083326 /* FtUser.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -164,8 +149,6 @@
 		F6C4F8B72B9B0612007A8D29 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				1E1AD5022BDF5DE400D90588 /* Component */,
-				1E1AD4F92BDF5DE400D90588 /* MyInfoView.swift */,
 				F6C4F8A22B9AEC40007A8D29 /* ContentView.swift */,
 				F6FA7FA42BD9A12600738F65 /* Login */,
 				F6FA7FAF2BD9A48100738F65 /* MyPage */,
@@ -294,26 +277,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E1AD5062BDF5DE400D90588 /* ProgressModel.swift in Sources */,
-				1E1AD50A2BDF5DE400D90588 /* RankingUserConponentView.swift in Sources */,
-				1E1AD5092BDF5DE400D90588 /* RankingListView.swift in Sources */,
-				1E1AD50C2BDF5DE400D90588 /* UserView.swift in Sources */,
-				F6FA7FA82BD9A26700738F65 /* Quotes.swift in Sources */,
+				F6045F682CBF488400083326 /* Wallet.swift in Sources */,
 				F6FA7FAE2BD9A46F00738F65 /* RankPageView.swift in Sources */,
+				F6045F6A2CBF504A00083326 /* FtUser.swift in Sources */,
 				F6C4F8AF2B9AEDAD007A8D29 /* Auth.swift in Sources */,
-				1E1AD50B2BDF5DE400D90588 /* TopToolbarView.swift in Sources */,
 				F6FA7FA62BD9A13F00738F65 /* LoginPageView.swift in Sources */,
-				1EF6E42B2BE32AD300FCBD12 /* QuoteView.swift in Sources */,
-				1E1AD5082BDF5DE400D90588 /* ProgressInfoView.swift in Sources */,
-				1E1AD5052BDF5DE400D90588 /* MyInfoView.swift in Sources */,
+				F6045F6D2CBF87AE00083326 /* Evalpoint.swift in Sources */,
 				F6C4F8B12B9AF956007A8D29 /* Service.swift in Sources */,
 				F6C4F8A32B9AEC40007A8D29 /* ContentView.swift in Sources */,
+				F6045F602CB5F98300083326 /* Level.swift in Sources */,
 				F6FA7FB12BD9A49D00738F65 /* MyPageView.swift in Sources */,
+				F6045F662CBE7A1100083326 /* ChartView.swift in Sources */,
 				F6FA7FAB2BD9A35E00738F65 /* InfoPageView.swift in Sources */,
 				F684BA542C40C4CB00978836 /* LoginModalView.swift in Sources */,
+				F6045F622CBCCFD200083326 /* Projects.swift in Sources */,
 				F6C4F8A12B9AEC40007A8D29 /* For42GSApp.swift in Sources */,
-				1E1AD5072BDF5DE400D90588 /* ProgressView.swift in Sources */,
 				F6C4F8B32B9AFD10007A8D29 /* UIScreen.swift in Sources */,
+				F6045F642CBD24C200083326 /* Keychain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,8 +437,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -493,8 +473,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

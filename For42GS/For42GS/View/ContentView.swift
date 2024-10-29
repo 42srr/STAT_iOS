@@ -38,9 +38,7 @@ struct ContentView: View {
                 }
                 .tag(2)
         }
-        .onAppear {
-            service.getQuotes()
-        }
+        .onAppear {}
         .onChange(of: selection) {}
     }
 }

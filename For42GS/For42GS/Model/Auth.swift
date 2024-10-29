@@ -9,14 +9,14 @@ import Foundation
 
 struct Auth : Codable {
     
-    var intraId : String
-    var intraPass : String
+    var acToken : String
+    var reToken : String
     
     init(
-        intraId : String = "",
-        intraPass : String = ""
+        acToken : String = "",
+        reToken : String = ""
     ) {
-        self.intraId = intraId
-        self.intraPass = intraPass
+        self.acToken = acToken
+        self.reToken = reToken
     }
 }

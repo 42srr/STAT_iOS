@@ -9,7 +9,27 @@ import SwiftUI
 
 struct InfoPageView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            ScrollView{
+                LazyVStack(spacing : 32){
+//                    ProgressInfoView(model: ProgressModel(name: "블랙홀" ,progress: 0.2))
+//                    ProgressInfoView(model: ProgressModel(name: "블랙홀" ,progress: 0.2))
+//                    ProgressInfoView(model: ProgressModel(name: "블랙홀" ,progress: 0.2))
+//                    ProgressInfoView(model: ProgressModel(name: "블랙홀" ,progress: 0.2))
+                }
+            }
+            .toolbar{
+                ToolbarItem(placement: .navigationBarLeading){
+                    Image("tool_logo")
+                        .resizable()
+                        .frame(width: 120)
+                }
+                ToolbarItem(placement: .navigationBarTrailing){
+                    Image(systemName: "gear")
+                        .foregroundColor(.orange)
+                }
+            }
+        }
     }
 }
 

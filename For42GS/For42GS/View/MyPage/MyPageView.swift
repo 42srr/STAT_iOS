@@ -15,7 +15,7 @@ struct MyPageView: View {
 //MARK: - 2. BODY
     
     var body: some View {
-        QuoteView()
+        Text("hi")
     }
 }
 
