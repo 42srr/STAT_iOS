@@ -11,7 +11,7 @@ import Alamofire
 
 class Service : ObservableObject {
     
-    let appServer : String = "http://118.67.134.143:8080"
+    let appServer : String = "https://api.42srr.com"
     @Published var acToken : String? = KeychainItem.AcToken
     @Published var reToken : String? = KeychainItem.ReToken
     @Published var isLogin : Bool = UserDefaults.standard.bool(forKey: "isLogin")
