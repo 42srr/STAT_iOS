@@ -38,7 +38,6 @@ struct WebView: UIViewRepresentable {
         
         func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
             if let url = navigationAction.request.url {
-                // URL이 변경될 때 콜백을 호출하여 처리
                 onNavigationChange(url)
             }
             decisionHandler(.allow)

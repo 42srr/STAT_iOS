@@ -7,16 +7,41 @@
 
 import Foundation
 
-struct Auth : Codable {
+struct data : Codable {
     
-    var acToken : String
-    var reToken : String
+    var intraId : String
+    var accessToken : String
+    var refreshToken : String
     
     init(
-        acToken : String = "",
-        reToken : String = ""
+        
+        intraId : String = "",
+        accessToken : String = "",
+        refreshToken : String = ""
     ) {
-        self.acToken = acToken
-        self.reToken = reToken
+        self.intraId = intraId
+        self.accessToken = KeychainItem.AcToken
+        self.refreshToken = KeychainItem.ReToken
+    }
+}
+
+struct AuthData : Codable {
+    
+    var status : String
+    var code : Int
+    var message : String
+    var data : data
+    
+    init(
+        
+        status : String = "",
+        code : Int = 0,
+        message : String = "",
+        data : data
+    ) {
+        self.status = status
+        self.code = code
+        self.message = message
+        self.data = data
     }
 }

@@ -12,30 +12,32 @@ import Alamofire
 class Service : ObservableObject {
     
     let appServer : String = "https://api.42srr.com"
-    @Published var acToken : String? = KeychainItem.AcToken
-    @Published var reToken : String? = KeychainItem.ReToken
+    @Published var Auth : AuthData = AuthData(data: data())
     @Published var isLogin : Bool = UserDefaults.standard.bool(forKey: "isLogin")
-    
     @Published var wallet : [rank_Wallet] = []
     @Published var eval : [rank_Eval] = []
-    @Published var login_Url : URL = URL(string: "https://api.intra.42.fr/oauth/authorize?client_id=u-s4t2ud-598ae18e7a326adf87c4c13c715a91675c6b68458bb4082e24e297616ebd98d4&redirect_uri=http%3A%2F%2Flocalhost%3A5173&response_type=code")!
+    @Published var login_Url : URL = URL(string: "https://api.intra.42.fr/oauth/authorize?client_id=u-s4t2ud-598ae18e7a326adf87c4c13c715a91675c6b68458bb4082e24e297616ebd98d4&redirect_uri=https%3A%2F%2Fstat.42srr.com&response_type=code")!
     
     func login(code: String) {
         let parameters: [String: String] = [
-            "authCode" : code
+            "code" : code
         ]
         AF.request("\(appServer)/login", method: .get, parameters: parameters, encoding: URLEncoding.queryString)
-            .responseDecodable(of: Auth.self) { response in
+            .responseDecodable(of: AuthData.self) { response in
                 switch response.result {
                 case .success(let reData):
                     do {
-                        try KeychainItem(service: "DonsNote.For42GS", account: "AcToken").saveItem(reData.acToken)
-                        try KeychainItem(service: "DonsNote.For42GS", account: "ReToken").saveItem(reData.reToken)
+                        try KeychainItem(service: "DonsNote.For42GS", account: "AcToken").saveItem(reData.data.accessToken)
+                        try KeychainItem(service: "DonsNote.For42GS", account: "ReToken").saveItem(reData.data.refreshToken)
                     } catch {
                         print("Token Response on Keychain is fail")
                     }
-                    self.acToken = reData.acToken
-                    self.reToken = reData.reToken
+                    self.Auth.status = reData.status
+                    self.Auth.code = reData.code
+                    self.Auth.message = reData.message
+                    self.Auth.data.intraId = reData.data.intraId
+                    self.Auth.data.accessToken = reData.data.accessToken
+                    self.Auth.data.refreshToken = reData.data.refreshToken
                     self.isLogin = true
                     UserDefaults.standard.set(true, forKey: "isLogin")
                     print("Login Success")
@@ -49,20 +51,20 @@ class Service : ObservableObject {
     
     func refresh_Token() {
         let parameters: [String: String] = [
-            "refreshToken" : reToken!
+            "refreshToken" : Auth.data.refreshToken
         ]
         AF.request("\(appServer)/refresh", method: .post, parameters: parameters)
-            .responseDecodable(of: Auth.self) { response in
+            .responseDecodable(of: AuthData.self) { response in
                 switch response.result {
                 case .success(let reData):
                     do {
-                        try KeychainItem(service: "DonsNote.For42GS", account: "AcToken").saveItem(reData.acToken)
-                        try KeychainItem(service: "DonsNote.For42GS", account: "ReToken").saveItem(reData.reToken)
+                        try KeychainItem(service: "DonsNote.For42GS", account: "AcToken").saveItem(reData.data.accessToken)
+                        try KeychainItem(service: "DonsNote.For42GS", account: "ReToken").saveItem(reData.data.refreshToken)
                     } catch {
                         print("Token Response on Keychain is fail")
                     }
-                    self.acToken = reData.acToken
-                    self.reToken = reData.reToken
+                    self.Auth.data.accessToken = reData.data.accessToken
+                    self.Auth.data.refreshToken = reData.data.refreshToken
                     print("Refresh Success")
                 case .failure(let error):
                     print("Refresh Error : \(error)")
@@ -71,7 +73,7 @@ class Service : ObservableObject {
     }
     
     func rank_wallet() {
-        let headers: HTTPHeaders = [.authorization(bearerToken: acToken ?? "")]
+        let _: HTTPHeaders = [.authorization(bearerToken: Auth.data.accessToken)]
         AF.request("\(appServer)/ranking/wallet", method: .get)
             .responseDecodable(of: [rank_Wallet].self) { response in
                 switch response.result {
@@ -85,7 +87,7 @@ class Service : ObservableObject {
     }
     
     func rank_eval() {
-        let headers: HTTPHeaders = [.authorization(bearerToken: acToken ?? "")]
+        let _: HTTPHeaders = [.authorization(bearerToken: Auth.data.accessToken)]
         AF.request("\(appServer)/ranking/evalpoint", method: .get)
             .responseDecodable(of: [rank_Eval].self) { response in
                 switch response.result {
@@ -97,4 +99,6 @@ class Service : ObservableObject {
                 }
             }
     }
+    
+    
 }
